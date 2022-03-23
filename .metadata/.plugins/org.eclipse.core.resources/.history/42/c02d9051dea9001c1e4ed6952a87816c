@@ -1,0 +1,13 @@
+package metodoinstancia;
+
+public class MetodoInstancia {
+
+	public static void main(String[] args) {
+
+		Cliente cliente = new Cliente("Alexandre", "Afonso", "000000000", "alexandre@algaworks.com");
+
+		System.out.println(cliente.getNomeCompleto());
+		
+	}
+
+}

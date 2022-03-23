@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Exercicio03 {
+
+	public static class Calculator {
+		
+		private Integer intValue1;
+		private Integer intValue2;
+		private Double doubleValue1;
+		private Double doubleValue2;
+
+		public Calculator() {
+
+		}
+
+		private String setValue1(Object value) {
+//			if(value.getClass().getSimpleName() == "Integer")
+//				value.toString();
+//			else this.doubleValue1 = value;
+			return value.toString();
+		}
+
+		public Integer add(double value1, double value2) {
+			return (intValue1 + intValue2);
+		};
+
+		protected Double add(int value1, int value2) {
+			return (doubleValue1 + doubleValue2);
+		};
+
+		protected Integer subtract(double value1, double value2) {
+			return (intValue1 - intValue2);
+		};
+
+		protected Double subtract(int value1, int value2) {
+			return (doubleValue1 - doubleValue2);
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		Calculator calc = new Calculator();
+
+		System.out.println("Qual operação você deseja realizar?");
+		System.out.println("1- Adição");
+		System.out.println("2- Subtração");
+		
+//		System.out.println(calc.setValue1(sc.nextInt()));
+		System.out.println(calc.setValue1(sc.nextDouble()));
+
+//		Integer operation = sc.nextInt();
+//		sc.nextLine();
+//
+//		System.out.println("Digite os dois numeros para serem utilizados na operação: ");
+//
+//		switch (operation) {
+//
+//		case 1:
+//
+//		}
+
+	}
+
+}

@@ -1,0 +1,18 @@
+
+public class IteracaoFor {
+
+	public static void main(String[] args) {
+
+		Double[] carrinhoDeCompras = new Double[]{
+				50.0,
+				50.0,
+				50.0
+				};
+		
+		for(int i = 0; i < carrinhoDeCompras.length; i++) {
+			System.out.println(carrinhoDeCompras[i]);
+		}
+		
+	}
+
+}

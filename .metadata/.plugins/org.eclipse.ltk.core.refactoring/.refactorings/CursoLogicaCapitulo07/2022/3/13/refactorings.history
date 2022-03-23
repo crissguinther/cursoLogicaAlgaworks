@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;VetoresMais2Dimensoes&apos; to &apos;VetoresMaisDe2Dimensoes&apos;&#x0D;&#x0A;- Original project: &apos;CursoLogicaCapitulo07&apos;&#x0D;&#x0A;- Original element: &apos;VetoresMais2Dimensoes&apos;&#x0D;&#x0A;- Renamed element: &apos;VetoresMaisDe2Dimensoes&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;VetoresMais2Dimensoes&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{VetoresMais2Dimensoes.java[VetoresMais2Dimensoes" matchStrategy="1" name="VetoresMaisDe2Dimensoes" qualified="false" references="true" similarDeclarations="false" stamp="1647902670022" textual="false" version="1.0"/>
+</session>

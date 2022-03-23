@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o valor do produto: ");
+
+		double valorProduto = sc.nextDouble();
+
+		System.out.println("Digite o valor recebido: ");
+
+		double valorRecebido = sc.nextDouble();
+
+		double troco = valorProduto - valorRecebido;
+
+		System.out.println("O troco deve ser de: " + troco);
+		sc.close();
+
+	}
+
+}
