@@ -1297,3 +1297,21 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-23 17:58:39.228
 !MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/artifacts.jar
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-03-23 19:18:25.210
+!MESSAGE F:\Documentos\Java_AlgaWorks\.git\.probe-1a84faa9-3b9d-4ed5-a093-b232187e8abc: A operação solicitada não pode ser executada em um arquivo com uma seção mapeada pelo usuário aberta
+!STACK 0
+java.nio.file.FileSystemException: F:\Documentos\Java_AlgaWorks\.git\.probe-1a84faa9-3b9d-4ed5-a093-b232187e8abc: A operação solicitada não pode ser executada em um arquivo com uma seção mapeada pelo usuário aberta
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:224)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.write(FS.java:515)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.measureMinimalRacyInterval(FS.java:474)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.lambda$2(FS.java:416)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
