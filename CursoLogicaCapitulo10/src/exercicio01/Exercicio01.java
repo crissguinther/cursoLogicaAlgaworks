@@ -1,6 +1,6 @@
 package exercicio01;
 
-import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -9,23 +9,29 @@ import java.util.Scanner;
 
 public class Exercicio01 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		ArrayList<String> linhas = new ArrayList<String>();
 		Scanner sc = new Scanner(System.in);
-
-		String folder = "./src/exercicio01/textfiles/";
-		String fileName = folder + "/tasks.txta";
-
-		Path folderPath = Paths.get(folder);
+		
+		Path folder = Paths.get(System.getProperty("user.dir") + "/files/exercicio01/textfiles");		
+		Path fileName = Paths.get(folder + "/tasks.txt");
 
 		try {
 			// Checa se o diretório existe e cria ele, caso contrário
-			if (!Files.isDirectory(folderPath)) {
-				File f = new File(folder);
-				f.mkdir();
-				System.out.println("Diretorio criado!");
-			}
+			if (Files.notExists(folder)) {
+
+				try {
+					Files.createDirectories(folder);
+					System.out.println("Diretório criado!");
+				} catch (IOException e) {
+					sc.close();
+					System.out.println("Não foi possível criar o diretório! Abortando... ");
+					throw new RuntimeException(e);
+				}
+
+			} else
+				System.out.println("Diretório encontrado! Iniciando...");
 
 			while (true) {
 				System.out.print("Digite a tarefa a ser adicionada: ");
@@ -36,12 +42,11 @@ public class Exercicio01 {
 					break;
 				} else {
 					linhas.add(tarefa);
-					Files.write(Paths.get(fileName), linhas);
+					Files.write(fileName, linhas);
 				}
 
 			}
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
+		} catch (IOException e) {
 			System.out.println("Houve um erro ao tentar salvar seus arquivos!");
 		}
 

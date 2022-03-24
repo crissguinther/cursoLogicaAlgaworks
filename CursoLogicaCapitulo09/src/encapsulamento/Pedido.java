@@ -5,8 +5,7 @@ public class Pedido {
 	private int codigo;
 	private double subtotal;
 	private int desconto;
-	private double total;
-
+	
 	public Pedido() {
 	}
 

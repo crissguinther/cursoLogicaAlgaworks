@@ -41,6 +41,8 @@ public class Exercicio02 {
 
 		System.out.print("Obrigado(a) por usar nosso aplicativo!");
 
+		sc.close();
+		
 	}
 
 }

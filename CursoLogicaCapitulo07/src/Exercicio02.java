@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Exercicio02 {
 
 	public static void main(String[] args) {
