@@ -8,17 +8,17 @@ import java.util.List;
 
 public class LeituraArquivos {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
-		Path arquivo = Paths.get(System.getProperty("user.dir") + "/files/exercicio01/textfiles/tasks.txt");
+		Path arquivo = Paths.get(System.getProperty("user.dir") + "/src/escritaarquivos/aula.txt");
 		try {
 			List<String> linhas = Files.readAllLines(arquivo);
 
 			for (String linha : linhas)
 				System.out.println(linha);
 
-		} catch (Exception e) {
-			System.out.println("Erro: " + e.getMessage());
+		} catch (IOException e) {
+			throw new RuntimeException(e); 
 		}
 
 	}
