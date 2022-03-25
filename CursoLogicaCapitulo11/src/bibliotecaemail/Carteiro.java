@@ -23,19 +23,4 @@ public class Carteiro {
 
 	}
 
-//	public static void enviar(String para, String assunto, String msg, String[] configs) throws EmailException {
-//
-//		Email email = new SimpleEmail();
-//		email.setHostName("smtp.gmail.com");
-//		email.setSmtpPort(465);
-//		email.setAuthenticator(new DefaultAuthenticator(configs[0], configs[1]));
-//		email.setSSLOnConnect(true);
-//		email.setFrom(configs[2]);
-//		email.setSubject(assunto);
-//		email.setMsg(msg);
-//		email.addTo(para);
-//		email.send();
-
-	// }
-
 }
