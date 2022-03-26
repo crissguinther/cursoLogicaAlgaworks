@@ -5,31 +5,60 @@ public class AlgoritmoAvancado {
 
 		ListaAlunos lista = new ListaAlunos();
 
-		Aluno aluno = new Aluno();
-		aluno.nome = "João";
-		lista.adicionar(aluno);
+		Aluno aluno1 = new Aluno();
+		aluno1.nome = "João";
+		lista.adicionar(aluno1);
 
-		aluno = new Aluno();
-		aluno.nome = "Maria";
-		lista.adicionar(aluno);
+		Aluno aluno2 = new Aluno();
+		aluno2.nome = "Maria";
+		lista.adicionar(null);
 
-		aluno = new Aluno();
-		aluno.nome = "Alexandre";
-		lista.adicionar(aluno);
+		Aluno aluno3 = new Aluno();
+		aluno3.nome = "Alexandre";
+		lista.adicionar(aluno3);
 
-		aluno = new Aluno();
-		aluno.nome = "Normandes";
-		lista.adicionar(aluno);
+		Aluno aluno4 = new Aluno();
+		aluno4.nome = "Normandes";
+		lista.adicionar(aluno4);
 
-		aluno = new Aluno();
-		aluno.nome = "Thiago";
-		lista.adicionar(aluno);
+		Aluno aluno5 = new Aluno();
+		aluno5.nome = "Thiago";
+		lista.adicionar(aluno5);
 
+//		for (int i = 0; i < lista.tamanhoLista; i++) {
+//			Aluno a = lista.obter(i);
+//			if (a != null)
+//				System.out.println("Aluno: " + a.nome);
+//			else
+//				System.out.println("Aluno sem nome");
+//		}
+
+		mostrarAlunos(lista);
+		
+		System.out.println("------------------------------------------ ");
+
+		lista.remover(aluno3);
+		
+		mostrarAlunos(lista);
+
+//		for (int i = 0; i < lista.tamanhoLista; i++) {
+//			Aluno a = lista.obter(i);
+//			if (a != null)
+//				System.out.println("Aluno: " + a.nome);
+//			else
+//				System.out.println("Aluno sem nome");
+//		}
+
+	}
+	
+	static void mostrarAlunos(ListaAlunos lista) {
 		for (int i = 0; i < lista.tamanhoLista; i++) {
 			Aluno a = lista.obter(i);
-			System.out.println("Aluno: " + a.nome);
+			if (a != null)
+				System.out.println("Aluno: " + a.nome);
+			else
+				System.out.println("Aluno sem nome");
 		}
-
 	}
 
 }

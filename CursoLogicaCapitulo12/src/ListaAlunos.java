@@ -1,7 +1,7 @@
 
 public class ListaAlunos {
 
-	static final int QUANTIDADE_LISTA = 2;
+	static final int QUANTIDADE_LISTA = 5;
 
 	Aluno[] lista = new Aluno[QUANTIDADE_LISTA];
 
@@ -29,6 +29,31 @@ public class ListaAlunos {
 		lista[tamanhoLista] = aluno;
 
 		tamanhoLista++;
+	}
+
+	void remover(int indice) {
+		int indiceInicial = indice + 1;
+
+		for (int i = indiceInicial; i < tamanhoLista; i++) {
+			lista[i - 1] = lista[i];
+		}
+
+		tamanhoLista--;
+		lista[tamanhoLista] = null;
+	}
+
+	void remover(Aluno aluno) {
+		for (int i = 0; i < tamanhoLista; i++) {
+			Aluno a = lista[i];
+
+			if (a != null && a.equals(aluno)) {
+				remover(i);
+				break;
+			} else if (a == null && aluno == null) {
+				remover(i);
+				break;
+			}
+		}
 	}
 
 }
