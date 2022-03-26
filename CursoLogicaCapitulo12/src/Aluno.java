@@ -3,20 +3,10 @@ public class Aluno {
 
 	String nome;
 
-//	public Aluno() {}
-//	
-//	public Aluno(String nome) {
-//		this.nome = nome;
-//	}
-//
-//	public String getNome() {
-//		return nome;
-//	}
-//
-//	public void setNome(String nome) {
-//		this.nome = nome;
-//	}
+	boolean oAlunoVemDepoisDe(Aluno aluno) {
+		if (aluno == null)
+			return false;
+		return nome.compareTo(aluno.nome) > 0;
+	}
 
-	
-	
 }

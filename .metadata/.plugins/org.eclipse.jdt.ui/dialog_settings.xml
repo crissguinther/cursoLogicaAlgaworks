@@ -50,9 +50,9 @@
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
 		<item key="DIALOG_X_ORIGIN" value="229"/>
 		<item key="DIALOG_Y_ORIGIN" value="76"/>
-		<item key="DIALOG_WIDTH" value="517"/>
-		<item key="DIALOG_HEIGHT" value="678"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="646"/>
+		<item key="DIALOG_HEIGHT" value="761"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.dialogs.OpenTypeSelectionDialog2">
 		<item key="ShowStatusLine" value="true"/>
@@ -82,8 +82,10 @@
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item key="DIALOG_X_ORIGIN" value="224"/>
 		<item key="DIALOG_Y_ORIGIN" value="64"/>
-		<item key="DIALOG_WIDTH" value="526"/>
-		<item key="DIALOG_HEIGHT" value="696"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="662"/>
+		<item key="DIALOG_HEIGHT" value="784"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+	<section name="RenameInformationPopup">
 	</section>
 </section>
