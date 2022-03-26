@@ -37,11 +37,6 @@ public class AlgoritmoAvancado {
 		listaAlunos.ordenar();
 		iterar(listaAlunos);
 
-		System.out.println("------------------------------------------ ");
-
-		listaAlunos.remover(aluno3);
-		iterar(listaAlunos);
-
 	}
 
 	static void iterar(ListaAlunos lista) {

@@ -6,7 +6,7 @@ public class UsandoBibliotecaDeEmail {
 
 	public static void main(String[] args) throws EmailException {
 
-		Carteiro.enviar();
+//		Carteiro.enviar();
 
 		System.out.println("Enviado!");
 	}
